@@ -6,51 +6,54 @@ settings:
 
 dependencies:
   '@remix-run/css-bundle':
-    specifier: ^2.2.0
+    specifier: 2.2.0
     version: 2.2.0
   '@remix-run/node':
-    specifier: ^2.2.0
+    specifier: 2.2.0
     version: 2.2.0(typescript@5.2.2)
   '@remix-run/react':
-    specifier: ^2.2.0
+    specifier: 2.2.0
     version: 2.2.0(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
   '@remix-run/serve':
-    specifier: ^2.2.0
+    specifier: 2.2.0
     version: 2.2.0(typescript@5.2.2)
+  '@vercel/remix':
+    specifier: 2.2.0
+    version: 2.2.0(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
   isbot:
-    specifier: ^3.6.8
+    specifier: 3.7.0
     version: 3.7.0
   react:
-    specifier: ^18.2.0
+    specifier: 18.2.0
     version: 18.2.0
   react-dom:
-    specifier: ^18.2.0
+    specifier: 18.2.0
     version: 18.2.0(react@18.2.0)
 
 devDependencies:
   '@remix-run/dev':
-    specifier: ^2.2.0
+    specifier: 2.2.0
     version: 2.2.0(@remix-run/serve@2.2.0)(typescript@5.2.2)(vite@4.5.0)
   '@remix-run/eslint-config':
-    specifier: ^2.2.0
+    specifier: 2.2.0
     version: 2.2.0(eslint@8.52.0)(react@18.2.0)(typescript@5.2.2)
   '@types/react':
-    specifier: ^18.2.20
+    specifier: 18.2.34
     version: 18.2.34
   '@types/react-dom':
-    specifier: ^18.2.7
+    specifier: 18.2.14
     version: 18.2.14
   eslint:
-    specifier: ^8.38.0
+    specifier: 8.52.0
     version: 8.52.0
   typescript:
-    specifier: ^5.1.6
+    specifier: 5.2.2
     version: 5.2.2
   vite:
-    specifier: ^4.5.0
+    specifier: 4.5.0
     version: 4.5.0
   vite-tsconfig-paths:
-    specifier: ^4.2.1
+    specifier: 4.2.1
     version: 4.2.1(typescript@5.2.2)(vite@4.5.0)
 
 packages:
@@ -1638,6 +1641,22 @@ packages:
   /@vanilla-extract/private@1.0.3:
     resolution: {integrity: sha512-17kVyLq3ePTKOkveHxXuIJZtGYs+cSoev7BlP+Lf4916qfDhk/HBjvlYDe8egrea7LNPHKwSZJK/bzZC+Q6AwQ==}
     dev: true
+
+  /@vercel/remix@2.2.0(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2):
+    resolution: {integrity: sha512-FmaGaJCLM8H3UrvYN9IPtdPgzJHhPeVl43Yt4g9cC/FKQGVLnGLsd5pAwWUl9ylkQGZxyfRx80UZ2+ByFP4PMA==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: '*'
+      react-dom: '*'
+    dependencies:
+      '@remix-run/node': 2.2.0(typescript@5.2.2)
+      '@remix-run/server-runtime': 2.2.0(typescript@5.2.2)
+      isbot: 3.7.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - typescript
+    dev: false
 
   /@web3-storage/multipart-parser@1.0.0:
     resolution: {integrity: sha512-BEO6al7BYqcnfX15W2cnGR+Q566ACXAT9UQykORCWW80lmkpWsnEob6zJS1ZVBKsSJC8+7vJkHwlp+lXG1UCdw==}
